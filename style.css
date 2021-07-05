@@ -296,6 +296,10 @@ section .heading {
     padding: 10px 0 25px;
 }
 
+.arrow-skills {
+    width: 25px;
+}
+
 .arrow-skills, .arrow-skills-medium-screen {
     transition: all 0.3s ease-in-out;
     margin-right: 25px;

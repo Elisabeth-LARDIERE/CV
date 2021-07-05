@@ -77,7 +77,6 @@ let showTopGood = () => {
     carousel.setAttribute("id", "myGoodCarousel");
     carousel.setAttribute("data-ride", "carousel");
     topGood.appendChild(carousel);
-    console.log(carousel);
 
     let carouselIndicators = document.createElement("ol");
     carouselIndicators.classList.add("carousel-indicators");
@@ -119,7 +118,6 @@ let showTopNoGood = () => {
     carousel.setAttribute("id", "myNogoodCarousel");
     carousel.setAttribute("data-ride", "carousel");
     topNoGood.appendChild(carousel);
-    console.log(carousel);
 
     let carouselIndicators = document.createElement("ol");
     carouselIndicators.classList.add("carousel-indicators");
