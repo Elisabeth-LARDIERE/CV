@@ -63,7 +63,7 @@ let topGoodItems = ["Je suis persévérante : si problème il y a, solution je c
 "toujours avec plaisir.", "J'ai une vraie conscience professionnelle. Le travail bien fait, c'est vraiment ma ligne de conduite."];
 
 let topNoGoodItems = ["J'ai du mal à évaluer ce que je sais faire : \"Tu te mets combien en HTML ? - Euh... 10 ? C'est bien 10 ? - Sur combien ? - Je sais pas, ça va jusqu'à combien le HTML ?\" ...", "Découle du 1 : j'ai assez peu confiance en mes capacités.",
-    "Je ne suis pas une super geek.", "(Ce qui veut dire que je n'ai vu aucun Star Wars. Pire encore : aucun épisode de Game of Thrones. Shame on me.)",
+    "Je ne suis pas une super geek.", "(Ce qui veut dire que je n'ai vu aucun Star Wars. Pire encore : aucun épisode de Game of Thrones. Shame !)",
     "\"Write less, code more\" : un doux rêve. Pour l'instant, on est plutôt sur du : \"Write a lot, write too much\".", "Je n'ai jamais fait de tests. Mais je suis impatiente de m'y confronter.", "Je n'ai pas d'expérience. Mais quand vous m'aurez recrutée, après j'en aurai. C'est donc un faux\n" +
     "problème.", "Je suis plutôt stressée : à l'approche d'un entretien, ma vie ne tient plus qu'en deux mots : Euphytose et méditation.", "Je suis la pénible qui oublie régulièrement son badge ou ses clés pour rentrer dans l'entreprise.\n" +
     "Je suis celle qui vient travailler alors que c'est férié, ou qui embauche avec une heure de retard parce\n" + "qu'elle ne pensait plus au changement d'heure. Bref : je suis étourdie. Mais j'y travaille à grands coups d'agendas, d'alarmes et de\n" +
@@ -73,19 +73,19 @@ let topNoGoodItems = ["J'ai du mal à évaluer ce que je sais faire : \"Tu te me
 let showTopGood = () => {
 
     let carousel = document.createElement("div");
-    carousel.classList.add("carousel", "slide", "text-center");
+    carousel.classList.add("carousel", "slide", "text-center", "row");
     carousel.setAttribute("id", "myGoodCarousel");
     carousel.setAttribute("data-ride", "carousel");
     topGood.appendChild(carousel);
-
-    let carouselIndicators = document.createElement("ol");
-    carouselIndicators.classList.add("carousel-indicators");
-    carousel.appendChild(carouselIndicators);
 
     let carouselContent = document.createElement("div");
     carouselContent.classList.add("carousel-inner");
     carouselContent.setAttribute("role", "listbox");
     carousel.appendChild(carouselContent);
+
+    let carouselIndicators = document.createElement("ol");
+    carouselIndicators.classList.add("carousel-indicators", "align-items-center");
+    carousel.appendChild(carouselIndicators);
 
     for (let i of topGoodItems) {
         let index = topGoodItems.indexOf(i);
@@ -108,6 +108,40 @@ let showTopGood = () => {
         itemText.textContent = i;
         item.appendChild(itemText);
     }
+
+    let carouselControlPrev = document.createElement("a");
+    carouselControlPrev.classList.add("carousel-control-prev", "justify-content-start");
+    carouselControlPrev.setAttribute("href", "#myGoodCarousel" );
+    carouselControlPrev.setAttribute("role", "button");
+    carouselControlPrev.setAttribute("data-slide", "prev");
+    carouselContent.appendChild(carouselControlPrev);
+
+    let carouselControlPrevIcon = document.createElement("span");
+    carouselControlPrevIcon.classList.add("carousel-control-prev-icon");
+    carouselControlPrevIcon.setAttribute("aria-hidden", "true");
+    carouselControlPrev.appendChild(carouselControlPrevIcon);
+
+    let carouselControlPrevScreenReaders = document.createElement("span");
+    carouselControlPrevScreenReaders.classList.add("sr-only");
+    carouselControlPrevScreenReaders.textContent="Previous";
+    carouselControlPrev.appendChild(carouselControlPrevScreenReaders);
+
+    let carouselControlNext = document.createElement("a");
+    carouselControlNext.classList.add("carousel-control-next", "justify-content-end");
+    carouselControlNext.setAttribute("href", "#myGoodCarousel" );
+    carouselControlNext.setAttribute("role", "button");
+    carouselControlNext.setAttribute("data-slide", "next");
+    carouselContent.appendChild(carouselControlNext);
+
+    let carouselControlNextIcon = document.createElement("span");
+    carouselControlNextIcon.classList.add("carousel-control-next-icon");
+    carouselControlNextIcon.setAttribute("aria-hidden", "true");
+    carouselControlNext.appendChild(carouselControlNextIcon);
+
+    let carouselControlNextScreenReaders = document.createElement("span");
+    carouselControlNextScreenReaders.classList.add("sr-only");
+    carouselControlNextScreenReaders.textContent="Next";
+    carouselControlNext.appendChild(carouselControlNextScreenReaders);
 }
 showTopGood();
 
@@ -119,14 +153,14 @@ let showTopNoGood = () => {
     carousel.setAttribute("data-ride", "carousel");
     topNoGood.appendChild(carousel);
 
-    let carouselIndicators = document.createElement("ol");
-    carouselIndicators.classList.add("carousel-indicators");
-    carousel.appendChild(carouselIndicators);
-
     let carouselContent = document.createElement("div");
     carouselContent.classList.add("carousel-inner");
     carouselContent.setAttribute("role", "listbox");
     carousel.appendChild(carouselContent);
+
+    let carouselIndicators = document.createElement("ol");
+    carouselIndicators.classList.add("carousel-indicators", "align-items-center");
+    carousel.appendChild(carouselIndicators);
 
     for (let i of topNoGoodItems) {
         let index = topNoGoodItems.indexOf(i);
@@ -149,5 +183,38 @@ let showTopNoGood = () => {
         itemText.textContent = i;
         item.appendChild(itemText);
     }
+    let carouselControlPrev = document.createElement("a");
+    carouselControlPrev.classList.add("carousel-control-prev", "justify-content-start");
+    carouselControlPrev.setAttribute("href", "#myNogoodCarousel" );
+    carouselControlPrev.setAttribute("role", "button");
+    carouselControlPrev.setAttribute("data-slide", "prev");
+    carouselContent.appendChild(carouselControlPrev);
+
+    let carouselControlPrevIcon = document.createElement("span");
+    carouselControlPrevIcon.classList.add("carousel-control-prev-icon");
+    carouselControlPrevIcon.setAttribute("aria-hidden", "true");
+    carouselControlPrev.appendChild(carouselControlPrevIcon);
+
+    let carouselControlPrevScreenReaders = document.createElement("span");
+    carouselControlPrevScreenReaders.classList.add("sr-only");
+    carouselControlPrevScreenReaders.textContent="Previous";
+    carouselControlPrev.appendChild(carouselControlPrevScreenReaders);
+
+    let carouselControlNext = document.createElement("a");
+    carouselControlNext.classList.add("carousel-control-next", "justify-content-end");
+    carouselControlNext.setAttribute("href", "#myNogoodCarousel" );
+    carouselControlNext.setAttribute("role", "button");
+    carouselControlNext.setAttribute("data-slide", "next");
+    carouselContent.appendChild(carouselControlNext);
+
+    let carouselControlNextIcon = document.createElement("span");
+    carouselControlNextIcon.classList.add("carousel-control-next-icon");
+    carouselControlNextIcon.setAttribute("aria-hidden", "true");
+    carouselControlNext.appendChild(carouselControlNextIcon);
+
+    let carouselControlNextScreenReaders = document.createElement("span");
+    carouselControlNextScreenReaders.classList.add("sr-only");
+    carouselControlNextScreenReaders.textContent="Next";
+    carouselControlNext.appendChild(carouselControlNextScreenReaders);
 }
 showTopNoGood();

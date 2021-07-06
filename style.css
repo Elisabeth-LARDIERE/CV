@@ -376,16 +376,6 @@ section .heading {
     margin-bottom: 30px;
 }
 
-.tops-link {
-    color: #a01a58;
-    text-decoration: underline;
-}
-
-.tops-link:hover {
-    text-decoration: underline;
-    font-weight: bold;
-}
-
 .top {
     margin: 20px 5px;
     padding: 20px 5px 5px;
@@ -397,17 +387,29 @@ section .heading {
     text-align: center;
 }
 
-.carousel {
-    min-height: 180px;
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23a01a58' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+    width: 1em;
+    margin-left: 5px;
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23a01a58' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+    width: 1em;
+    margin-right: 5px;
 }
 
 .carousel-indicators {
-    margin-bottom: 0;
+    position: initial;
+    padding: 0;
+    margin: 20px auto 0;
+    height: 30px;
+    /*margin-bottom: 0;*/
 }
 
 .carousel-indicators li {
-    width: 15px;
-    height: 15px;
+    width: 10px;
+    height: 10px;
     border-radius: 100%;
     border: 1px solid #a01a58;
 }
@@ -418,8 +420,9 @@ section .heading {
 
 .carousel-item p {
     font-style: italic;
-    margin-bottom: 30px;
-    margin-top: 10px;
+    margin: 0 auto;
+    width: 80%;
+    /*margin-top: 10px;*/
     line-height: 1.7;
 }
 
@@ -485,6 +488,18 @@ section .heading {
     .skills-details {
         width: 30%;
     }
+
+    .carousel-item p {
+        width: 85%;
+    }
+
+    .carousel-control-prev-icon {
+        margin-left: 10px;
+    }
+
+    .carousel-control-next-icon {
+        margin-right: 10px;
+    }
 }
 
 
@@ -522,8 +537,8 @@ section .heading {
         padding: 0;
     }
 
-    .carousel {
-        min-height: 150px;
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+        font-size: 1.2em;
     }
 }
 
@@ -616,9 +631,16 @@ section .heading {
     }
 
     .carousel-item p {
-        width: 80%;
         margin: 0 auto;
         line-height: 2;
+    }
+
+    .carousel-control-prev-icon {
+        margin-left: 15px;
+    }
+
+    .carousel-control-next-icon {
+        margin-right: 15px;
     }
 }
 
@@ -642,6 +664,14 @@ section .heading {
 
     #about {
         width: 80%;
+    }
+
+    .carousel-control-prev-icon {
+        margin-left: 20px;
+    }
+
+    .carousel-control-next-icon {
+        margin-right: 20px;
     }
 }
 
