@@ -98,7 +98,7 @@ section .heading {
     text-align: center;
 }
 
-.nav-pills .nav-link.active, .nav-pills .nav-link:hover {
+.nav-pills .nav-link.active, .nav-pills .nav-link:hover, .nav-pills .nav-link:focus {
     color: #a01a58 !important;
     background-color: #fff !important;
 }
@@ -305,7 +305,7 @@ section .heading {
     margin-right: 25px;
 }
 
-.arrow-skills:hover, .arrow-skills-medium-screen:hover {
+.arrow-skills:hover, .arrow-skills-medium-screen:hover, .arrow-skills:focus, .arrow-skills-medium-screen:focus {
     color: #a01a58;
 }
 

@@ -1,8 +1,8 @@
-// scroll sur la bonne section de page au clic sur les liens
+// scroll sur la bonne section de page au clic ou au press enter sur les liens
 
 $(function () {
 
-    $(".navbar a").on("click", function (event) {
+    $(".navbar a").on("click keypress", function (event) {
 
         event.preventDefault();
         let hash = this.hash;
@@ -23,11 +23,10 @@ let arrowSkills;
 
 let getResolution = () => {
     resolution = window.screen.width;
-    console.log(resolution);
 }
 
 $(function () {
-    $(".arrow-skills, .arrow-skills-medium-screen").on("click", function (event) {
+    $(".arrow-skills, .arrow-skills-medium-screen").on("click keypress", function (event) {
         event.preventDefault();
         getResolution();
         if (resolution < 768) {
@@ -47,7 +46,6 @@ $(function () {
             $(".skills-projectFive, .skills-icon-five").slideToggle();
         }
     })
-
 })
 
 
@@ -110,7 +108,7 @@ let showTopGood = () => {
 
     let carouselControlPrev = document.createElement("a");
     carouselControlPrev.classList.add("carousel-control-prev", "justify-content-start");
-    carouselControlPrev.setAttribute("href", "#myGoodCarousel" );
+    carouselControlPrev.setAttribute("href", "#myGoodCarousel");
     carouselControlPrev.setAttribute("role", "button");
     carouselControlPrev.setAttribute("data-slide", "prev");
     carouselContent.appendChild(carouselControlPrev);
@@ -122,12 +120,12 @@ let showTopGood = () => {
 
     let carouselControlPrevScreenReaders = document.createElement("span");
     carouselControlPrevScreenReaders.classList.add("sr-only");
-    carouselControlPrevScreenReaders.textContent="Previous";
+    carouselControlPrevScreenReaders.textContent = "Previous";
     carouselControlPrev.appendChild(carouselControlPrevScreenReaders);
 
     let carouselControlNext = document.createElement("a");
     carouselControlNext.classList.add("carousel-control-next", "justify-content-end");
-    carouselControlNext.setAttribute("href", "#myGoodCarousel" );
+    carouselControlNext.setAttribute("href", "#myGoodCarousel");
     carouselControlNext.setAttribute("role", "button");
     carouselControlNext.setAttribute("data-slide", "next");
     carouselContent.appendChild(carouselControlNext);
@@ -139,7 +137,7 @@ let showTopGood = () => {
 
     let carouselControlNextScreenReaders = document.createElement("span");
     carouselControlNextScreenReaders.classList.add("sr-only");
-    carouselControlNextScreenReaders.textContent="Next";
+    carouselControlNextScreenReaders.textContent = "Next";
     carouselControlNext.appendChild(carouselControlNextScreenReaders);
 }
 showTopGood();
@@ -184,7 +182,7 @@ let showTopNoGood = () => {
     }
     let carouselControlPrev = document.createElement("a");
     carouselControlPrev.classList.add("carousel-control-prev", "justify-content-start");
-    carouselControlPrev.setAttribute("href", "#myNogoodCarousel" );
+    carouselControlPrev.setAttribute("href", "#myNogoodCarousel");
     carouselControlPrev.setAttribute("role", "button");
     carouselControlPrev.setAttribute("data-slide", "prev");
     carouselContent.appendChild(carouselControlPrev);
@@ -196,12 +194,12 @@ let showTopNoGood = () => {
 
     let carouselControlPrevScreenReaders = document.createElement("span");
     carouselControlPrevScreenReaders.classList.add("sr-only");
-    carouselControlPrevScreenReaders.textContent="Previous";
+    carouselControlPrevScreenReaders.textContent = "Previous";
     carouselControlPrev.appendChild(carouselControlPrevScreenReaders);
 
     let carouselControlNext = document.createElement("a");
     carouselControlNext.classList.add("carousel-control-next", "justify-content-end");
-    carouselControlNext.setAttribute("href", "#myNogoodCarousel" );
+    carouselControlNext.setAttribute("href", "#myNogoodCarousel");
     carouselControlNext.setAttribute("role", "button");
     carouselControlNext.setAttribute("data-slide", "next");
     carouselContent.appendChild(carouselControlNext);
@@ -213,7 +211,8 @@ let showTopNoGood = () => {
 
     let carouselControlNextScreenReaders = document.createElement("span");
     carouselControlNextScreenReaders.classList.add("sr-only");
-    carouselControlNextScreenReaders.textContent="Next";
+    carouselControlNextScreenReaders.textContent = "Next";
     carouselControlNext.appendChild(carouselControlNextScreenReaders);
 }
 showTopNoGood();
+
