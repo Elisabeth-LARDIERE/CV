@@ -429,7 +429,6 @@ section .heading {
 }
 
 
-
 /******************** MEDIA QUERIES ********************/
 
 /*************** Small Devices ***************/
@@ -515,11 +514,14 @@ section .heading {
     .carousel-control-next-icon {
         margin-right: 10px;
     }
+
+    .carousel-indicators li {
+        width: 13px;
+        height: 13px;
+    }
 }
 
-
 /*************** Large Devices ***************/
-
 @media screen and (min-width: 992px) {
 
     .nav-link {
@@ -575,8 +577,8 @@ section .heading {
         font-size: 1.1em;
     }
 }
-/*************** Extra Large Devices ***************/
 
+/*************** Extra Large Devices ***************/
 @media screen and (min-width: 1200px) {
 
     .nav-item {
@@ -665,7 +667,6 @@ section .heading {
 
 
 /*************** Extra Extra Large Devices ***************/
-
 @media screen and (min-width: 1400px) {
 
     #myNavbar {
@@ -695,7 +696,6 @@ section .heading {
 }
 
 /*************** Extra Extra Large Devices ***************/
-
 @media screen and (min-width: 1920px) {
 
     #education {

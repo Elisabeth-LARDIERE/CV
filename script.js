@@ -2,7 +2,7 @@
 
 $(function () {
 
-    $(".navbar a, footer a").on("click", function (event) {
+    $(".navbar a").on("click", function (event) {
 
         event.preventDefault();
         let hash = this.hash;
@@ -58,8 +58,7 @@ let topNoGood = document.querySelector(".top-no-good");
 
 let topGoodItems = ["Je suis persévérante : si problème il y a, solution je cherche.", "Je sais m'appuyer sur une équipe : si solution je ne trouve pas, aide je demande.", "Je suis une bonne partenaire de travail : communicante, sociable, bienveillante.", "(En réalité j'achète\n" +
 "mes collègues avec des pâtisseries. C'est pas joli, joli, mais ça marche.)", "Je sais aussi travailler seule, en parfaite autonomie. Pas besoin d'être derrière moi pour me\n" +
-"motiver.", "J'adore apprendre. Un nouveau langage ? Une nouvelle techno ? Je mets les mains dans le cambouis avec\n" +
-"bonheur.", "Je suis ouverte aux critiques constructives. Tout ce qui peut m'aider à progresser est bienvenu.", "J'ai de bonnes capacités rédactionnelles et si je peux les mettre à profit pour x raison, je le ferai\n" +
+"motiver.", "J'adore apprendre. Un nouveau langage ? Une nouvelle techno ? Je m'y attelle avec bonheur.", "Je suis ouverte aux critiques constructives. Tout ce qui peut m'aider à progresser est bienvenu.", "J'ai de bonnes capacités rédactionnelles et si je peux les mettre à profit pour x raison, je le ferai\n" +
 "toujours avec plaisir.", "J'ai une vraie conscience professionnelle. Le travail bien fait, c'est vraiment ma ligne de conduite."];
 
 let topNoGoodItems = ["J'ai du mal à évaluer ce que je sais faire : \"Tu te mets combien en HTML ? - Euh... 10 ? C'est bien 10 ? - Sur combien ? - Je sais pas, ça va jusqu'à combien le HTML ?\" ...", "Découle du 1 : j'ai assez peu confiance en mes capacités.",
@@ -75,7 +74,7 @@ let showTopGood = () => {
     let carousel = document.createElement("div");
     carousel.classList.add("carousel", "slide", "text-center", "row");
     carousel.setAttribute("id", "myGoodCarousel");
-    carousel.setAttribute("data-ride", "carousel");
+    carousel.setAttribute("data-interval", "false");
     topGood.appendChild(carousel);
 
     let carouselContent = document.createElement("div");
@@ -150,7 +149,7 @@ let showTopNoGood = () => {
     let carousel = document.createElement("div");
     carousel.classList.add("carousel", "slide", "text-center");
     carousel.setAttribute("id", "myNogoodCarousel");
-    carousel.setAttribute("data-ride", "carousel");
+    carousel.setAttribute("data-interval", "false");
     topNoGood.appendChild(carousel);
 
     let carouselContent = document.createElement("div");
