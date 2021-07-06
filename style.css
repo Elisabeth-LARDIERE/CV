@@ -348,7 +348,9 @@ section .heading {
 .skills-icon {
     display: none;
     position: absolute;
-    top: 32%;
+    width: 35px;
+    height: 35px;
+    top: 33%;
     left: 10%;
 }
 
@@ -442,6 +444,14 @@ section .heading {
     .details-university {
         margin-bottom: 10px;
     }
+
+    .skills-projectThree {
+        width: 55%;
+    }
+
+    .skills-icon {
+        left: 12%;
+    }
 }
 
 
@@ -482,11 +492,16 @@ section .heading {
     }
 
     .skills {
-        width: 40%;
+        width: 35%;
     }
 
     .skills-details {
         width: 30%;
+    }
+
+    .skills-icon {
+        width: 40px;
+        height: 40px;
     }
 
     .carousel-item p {
@@ -522,6 +537,10 @@ section .heading {
 
     .skills {
         width: 30%;
+    }
+
+    .skills-projectThree {
+        width: 35%;
     }
 
     .skills-details {
