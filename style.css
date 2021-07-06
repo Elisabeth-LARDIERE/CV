@@ -132,7 +132,7 @@ section .heading {
     margin-top: 20px;
 }
 
-.button1 {
+.uploadCv {
     font-weight: bold;
     text-transform: uppercase;
     color: white;
@@ -144,7 +144,7 @@ section .heading {
     transition: all 0.3s ease-in-out;
 }
 
-.button1:hover {
+.uploadCv:hover {
     background: white;
     color: #a01a58;
     text-decoration: none;
@@ -304,8 +304,8 @@ section .heading {
     margin-right: 25px;
 }
 
-.arrow-skills:hover, .arrow-skills-medium-screen:hover, .arrow-skills:focus, .arrow-skills-medium-screen:focus {
-    color: #a01a58;
+.arrow-skills:hover, .arrow-skills:focus {
+   color: #a01a58;
 }
 
 .arrow-skills-medium-screen {
@@ -545,6 +545,7 @@ footer h5 {
 }
 
 /*************** Large Devices ***************/
+
 @media screen and (min-width: 992px) {
 
     .nav-link {
@@ -570,6 +571,10 @@ footer h5 {
 
     .skills-details {
         width: 25%;
+    }
+
+    .arrow-skills-medium-screen:hover, .arrow-skills-medium-screen:focus {
+        color: #a01a58;
     }
 
     #about {
