@@ -2,7 +2,7 @@
 
 $(function () {
 
-    $(".navbar a").on("click keypress", function (event) {
+    $(".navbar a, footer a").on("click keypress", function (event) {
 
         event.preventDefault();
         let hash = this.hash;
