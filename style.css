@@ -4,6 +4,7 @@
 
 body {
     font-family: 'Lato', sans-serif;
+    position: relative;
 }
 
 /*************** columns and rows ***************/
@@ -111,7 +112,6 @@ section .heading {
 /******************** HOME ********************/
 
 #home {
-    padding-top: 40px;
     padding-bottom: 40px;
     background: #a01a58;
 }
@@ -119,7 +119,6 @@ section .heading {
 .profile-picture {
     text-align: center;
     margin: 0 auto;
-    float: none;
 }
 
 #home .heading {
@@ -430,7 +429,6 @@ section .heading {
 
 footer {
     background: #a01a58;
-    padding: 20px 0 40px;
 }
 
 footer .fas {
@@ -696,10 +694,6 @@ footer h5 {
 
 /*************** Extra Extra Large Devices ***************/
 @media screen and (min-width: 1400px) {
-
-    #myNavbar {
-        justify-content: stretch;
-    }
 
     .nav-link {
         margin: 0 50px;
