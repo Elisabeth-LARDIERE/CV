@@ -211,7 +211,7 @@ section .heading {
     color: white;
 }
 
-.fa-caret-right {
+.fa-caret-right, .fa-caret-left {
     display: none;
 }
 
