@@ -221,44 +221,6 @@ showTopNoGood();
 
 let cards = Array.from(document.querySelectorAll(".timeline-panel"));
 
-/*for (let card of cards) {
-    card.addEventListener("click", function () {
-        let index = cards.indexOf(card);
-        console.log(index);
-        if (index === 0) {
-            if (cards[0].classList.contains("rotated-back")) {
-                cards[0].classList.remove("rotated-back");
-                cards[0].classList.add("rotated-front");
-            } else if (cards[0].classList.contains("rotated-front")) {
-                cards[0].classList.remove("rotated-front");
-                cards[0].classList.add("rotated-back");
-            } else {
-                cards[0].classList.add("rotated-front");
-            }
-        } else if (index === 1) {
-            if (cards[1].classList.contains("rotated-back")) {
-                cards[1].classList.remove("rotated-back");
-                cards[1].classList.add("rotated-front");
-            } else if (cards[1].classList.contains("rotated-front")) {
-                cards[1].classList.remove("rotated-front");
-                cards[1].classList.add("rotated-back");
-            } else {
-                cards[1].classList.add("rotated-front");
-            }
-        } else if (index === 2) {
-            if (cards[2].classList.contains("rotated-back")) {
-                cards[2].classList.remove("rotated-back");
-                cards[2].classList.add("rotated-front");
-            } else if (cards[2].classList.contains("rotated-front")) {
-                cards[2].classList.remove("rotated-front");
-                cards[2].classList.add("rotated-back");
-            } else {
-                cards[2].classList.add("rotated-front");
-            }
-        }
-    })
-}*/
-
 for (let card of cards) {
     card.addEventListener("click", function () {
         let index = cards.indexOf(card);
@@ -296,5 +258,3 @@ for (let card of cards) {
         }
     })
 }
-
-

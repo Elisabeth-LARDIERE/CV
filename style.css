@@ -236,13 +236,6 @@ section .heading {
     height: 320px;
 }
 
-/*.timeline-panel-container-inverted .timeline-panel:after {
-    border-left-width: 0;
-    border-right-width: 14px;
-    left: -14px;
-    right: auto;
-}*/
-
 .panel-front, .panel-back {
     backface-visibility: hidden;
     position: absolute;
@@ -250,10 +243,6 @@ section .heading {
     width: 100%;
     padding: 20px 10px 10px;
 }
-
-/*.panel-front {
-    padding: 20px 10px 10px;
-}*/
 
 .panel-back {
     transform: rotateY(180deg);
@@ -750,18 +739,6 @@ footer h5 {
         float: left;
         margin-left: 40px;
     }
-
-    /*.timeline-panel:after {
-        position: absolute;
-        top: 27px;
-        right: -14px;
-        display: inline-block;
-        border-top: 14px solid transparent;
-        border-left: 14px solid #fff;
-        border-right: 0 solid #fff;
-        border-bottom: 14px solid transparent;
-        content: " ";
-    }*/
 
     .fa-caret-up {
         display: none;
