@@ -111,7 +111,7 @@ let showTopGood = () => {
     carouselControlPrev.setAttribute("href", "#myGoodCarousel");
     carouselControlPrev.setAttribute("role", "button");
     carouselControlPrev.setAttribute("data-slide", "prev");
-    carouselContent.appendChild(carouselControlPrev);
+    topGood.appendChild(carouselControlPrev);
 
     let carouselControlPrevIcon = document.createElement("span");
     carouselControlPrevIcon.classList.add("carousel-control-prev-icon");
@@ -128,7 +128,7 @@ let showTopGood = () => {
     carouselControlNext.setAttribute("href", "#myGoodCarousel");
     carouselControlNext.setAttribute("role", "button");
     carouselControlNext.setAttribute("data-slide", "next");
-    carouselContent.appendChild(carouselControlNext);
+    topGood.appendChild(carouselControlNext);
 
     let carouselControlNextIcon = document.createElement("span");
     carouselControlNextIcon.classList.add("carousel-control-next-icon");
@@ -185,7 +185,7 @@ let showTopNoGood = () => {
     carouselControlPrev.setAttribute("href", "#myNogoodCarousel");
     carouselControlPrev.setAttribute("role", "button");
     carouselControlPrev.setAttribute("data-slide", "prev");
-    carouselContent.appendChild(carouselControlPrev);
+    topNoGood.appendChild(carouselControlPrev);
 
     let carouselControlPrevIcon = document.createElement("span");
     carouselControlPrevIcon.classList.add("carousel-control-prev-icon");
@@ -202,7 +202,7 @@ let showTopNoGood = () => {
     carouselControlNext.setAttribute("href", "#myNogoodCarousel");
     carouselControlNext.setAttribute("role", "button");
     carouselControlNext.setAttribute("data-slide", "next");
-    carouselContent.appendChild(carouselControlNext);
+    topNoGood.appendChild(carouselControlNext);
 
     let carouselControlNextIcon = document.createElement("span");
     carouselControlNextIcon.classList.add("carousel-control-next-icon");
