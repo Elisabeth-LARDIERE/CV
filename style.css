@@ -267,19 +267,21 @@ section .heading {
 
 .petrol {
     width: 280px;
+    margin-bottom: 20px;
 }
 
 .icon-flip-box {
     padding: 0;
     width: 100%;
-    height: fit-content;
     text-align: end;
+    position: fixed;
+    backface-visibility: hidden;
+    right: 10px;
 }
 
 .icon-flip {
-    width: 30px;
+    width: 25px;
     opacity: 0.5;
-    padding-right: 5px;
 }
 
 .icon-flip:hover {
