@@ -272,20 +272,15 @@ section .heading {
 
 .icon-flip-box {
     padding: 0;
-    width: 100%;
+    width: 90%;
     text-align: end;
     position: fixed;
     backface-visibility: hidden;
-    right: 10px;
 }
 
 .icon-flip {
     width: 25px;
     opacity: 0.5;
-}
-
-.icon-flip:hover {
-    opacity: 1;
 }
 
 .timeline-heading h3 {
@@ -540,6 +535,15 @@ footer h5 {
 
     .panel-front, .panel-back {
         padding: 20px;
+    }
+
+    .icon-flip-box {
+        bottom: 15px;
+        width: 95%;
+    }
+
+    .icon-flip {
+        width: 30px;
     }
 
     .top {
