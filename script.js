@@ -220,36 +220,79 @@ showTopNoGood();
 // flip des cartes d'expériences au clic sur la flèche de retournement
 
 let cards = Array.from(document.querySelectorAll(".timeline-panel"));
-let flipButtons = Array.from(document.querySelectorAll(".icon-flip"));
 
-for (let flipButton of flipButtons) {
-    flipButton.addEventListener("click", function () {
-        let index = flipButtons.indexOf(flipButton);
+/*for (let card of cards) {
+    card.addEventListener("click", function () {
+        let index = cards.indexOf(card);
         console.log(index);
         if (index === 0) {
             if (cards[0].classList.contains("rotated-back")) {
                 cards[0].classList.remove("rotated-back");
+                cards[0].classList.add("rotated-front");
+            } else if (cards[0].classList.contains("rotated-front")) {
+                cards[0].classList.remove("rotated-front");
+                cards[0].classList.add("rotated-back");
+            } else {
+                cards[0].classList.add("rotated-front");
             }
-            cards[0].classList.add("rotated-front");
         } else if (index === 1) {
-            cards[0].classList.add("rotated-back");
-            cards[0].classList.remove("rotated-front");
-        } else if (index === 2) {
             if (cards[1].classList.contains("rotated-back")) {
                 cards[1].classList.remove("rotated-back");
+                cards[1].classList.add("rotated-front");
+            } else if (cards[1].classList.contains("rotated-front")) {
+                cards[1].classList.remove("rotated-front");
+                cards[1].classList.add("rotated-back");
+            } else {
+                cards[1].classList.add("rotated-front");
             }
-            cards[1].classList.add("rotated-front");
-        } else if (index === 3) {
-            cards[1].classList.add("rotated-back");
-            cards[1].classList.remove("rotated-front");
-        } else if (index === 4) {
+        } else if (index === 2) {
             if (cards[2].classList.contains("rotated-back")) {
                 cards[2].classList.remove("rotated-back");
+                cards[2].classList.add("rotated-front");
+            } else if (cards[2].classList.contains("rotated-front")) {
+                cards[2].classList.remove("rotated-front");
+                cards[2].classList.add("rotated-back");
+            } else {
+                cards[2].classList.add("rotated-front");
             }
-            cards[2].classList.add("rotated-front");
-        } else if (index === 5) {
-            cards[2].classList.add("rotated-back");
-            cards[2].classList.remove("rotated-front");
+        }
+    })
+}*/
+
+for (let card of cards) {
+    card.addEventListener("click", function () {
+        let index = cards.indexOf(card);
+        console.log(index);
+        if (index === 0) {
+            if (cards[0].classList.contains("rotated-back")) {
+                cards[0].classList.remove("rotated-back");
+                cards[0].classList.add("rotated-front");
+            } else if (cards[0].classList.contains("rotated-front")) {
+                cards[0].classList.remove("rotated-front");
+                cards[0].classList.add("rotated-back");
+            } else {
+                cards[0].classList.add("rotated-front");
+            }
+        } else if (index === 1) {
+            if (cards[1].classList.contains("rotated-back")) {
+                cards[1].classList.remove("rotated-back");
+                cards[1].classList.add("rotated-front");
+            } else if (cards[1].classList.contains("rotated-front")) {
+                cards[1].classList.remove("rotated-front");
+                cards[1].classList.add("rotated-back");
+            } else {
+                cards[1].classList.add("rotated-front");
+            }
+        } else if (index === 2) {
+            if (cards[2].classList.contains("rotated-back")) {
+                cards[2].classList.remove("rotated-back");
+                cards[2].classList.add("rotated-front");
+            } else if (cards[2].classList.contains("rotated-front")) {
+                cards[2].classList.remove("rotated-front");
+                cards[2].classList.add("rotated-back");
+            } else {
+                cards[2].classList.add("rotated-front");
+            }
         }
     })
 }

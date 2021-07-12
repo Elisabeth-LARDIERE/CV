@@ -248,15 +248,16 @@ section .heading {
     position: absolute;
     height: 100%;
     width: 100%;
-}
-
-.panel-front {
     padding: 20px 10px 10px;
 }
 
+/*.panel-front {
+    padding: 20px 10px 10px;
+}*/
+
 .panel-back {
     transform: rotateY(180deg);
-    padding: 15px 10px;
+    /*padding: 15px 10px;*/
 }
 
 .xp-name {
@@ -278,12 +279,14 @@ section .heading {
 
 .icon-flip-box {
     padding: 0;
+    width: 100%;
+    height: fit-content;
+    text-align: end;
 }
 
 .icon-flip {
     width: 30px;
     opacity: 0.5;
-    float: right;
     padding-right: 5px;
 }
 
@@ -544,8 +547,8 @@ footer h5 {
         left: 12%;
     }
 
-    .panel-back {
-        padding: 15px 20px;
+    .panel-front, .panel-back {
+        padding: 20px;
     }
 }
 
@@ -759,10 +762,6 @@ footer h5 {
         border-bottom: 14px solid transparent;
         content: " ";
     }*/
-
-    .panel-front, .panel-back {
-        padding: 10px;
-    }
 
     .fa-caret-up {
         display: none;
