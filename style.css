@@ -232,6 +232,10 @@ section .heading {
     transform-style: preserve-3d;
 }
 
+.timeline-panel:hover {
+    cursor: pointer;
+}
+
 .timeline-panel-beach {
     height: 320px;
 }
@@ -281,7 +285,6 @@ section .heading {
 
 .icon-flip:hover {
     opacity: 1;
-    cursor: pointer;
 }
 
 .timeline-heading h3 {
