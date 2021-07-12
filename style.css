@@ -227,7 +227,6 @@ section .heading {
     padding: 0 15px;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
     background: #fff;
-    position: relative;
     transition: transform 1s;
     transform-style: preserve-3d;
 }
@@ -735,7 +734,7 @@ footer h5 {
         width: 90%;
         float: right;
         margin-right: 40px;
-        position: relative;
+
     }
 
     .timeline-panel-container-inverted .timeline-panel {
