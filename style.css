@@ -256,20 +256,6 @@ section .heading {
     width: 100%;
 }
 
-.writer {
-    width: 250px;
-}
-
-.asem {
-    width: 270px;
-    margin-top: 10px;
-}
-
-.petrol {
-    width: 280px;
-    margin-bottom: 20px;
-}
-
 .icon-flip-box {
     padding: 0;
     width: 90%;
@@ -601,11 +587,6 @@ footer h5 {
         height: 40px;
     }
 
-    .petrol {
-        width: 300px;
-        margin-top: 10px;
-    }
-
     .top {
         padding: 20px 20px 10px;
     }
@@ -789,6 +770,7 @@ footer h5 {
 
 
 /*************** Extra Extra Large Devices ***************/
+
 @media screen and (min-width: 1400px) {
 
     .nav-link {
@@ -814,6 +796,7 @@ footer h5 {
 }
 
 /*************** Extra Extra Large Devices ***************/
+
 @media screen and (min-width: 1920px) {
 
     #education {

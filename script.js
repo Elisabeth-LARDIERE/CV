@@ -61,7 +61,7 @@ let topGoodItems = ["Je suis persévérante : si problème il y a, solution je c
 
 let topNoGoodItems = ["J'ai du mal à évaluer ce que je sais faire : \"Tu te mets combien en HTML ? - Euh... 10 ? C'est bien 10 ? - Sur combien ? - Je sais pas, ça va jusqu'à combien le HTML ?\" ...", "Découle du 1 : j'ai assez peu confiance en mes capacités.",
     "Je ne suis pas une super geek.", "(Ce qui veut dire que je n'ai vu aucun Star Wars. Pire encore : aucun épisode de Game of Thrones. Shame !)",
-    "\"Write less, code more\" : un doux rêve. Pour l'instant, on est plutôt sur du : \"Write a lot, write too much\".", "Je n'ai jamais fait de tests. Mais je suis impatiente de m'y confronter.", "Je n'ai pas d'expérience. Mais quand vous m'aurez recrutée, après j'en aurai. C'est donc un faux\n" +
+    "\"Write less, code more\" : un doux rêve. Pour l'instant, on est plus proche de : \"Write a lot, write too much\".", "Je n'ai jamais fait de tests. Mais je suis impatiente de m'y confronter.", "Je n'ai pas d'expérience. Mais quand vous m'aurez recrutée, après j'en aurai. C'est donc un faux\n" +
     "problème.", "Je suis plutôt stressée : à l'approche d'un entretien, ma vie ne tient plus qu'en deux mots : Euphytose et méditation.", "Je suis la pénible qui oublie régulièrement son badge ou ses clés pour rentrer dans l'entreprise.\n" +
     "Je suis celle qui vient travailler alors que c'est férié, ou qui embauche avec une heure de retard parce\n" + "qu'elle ne pensait plus au changement d'heure. Bref : je suis étourdie. Mais j'y travaille à grands coups d'agendas, d'alarmes et de\n" +
     "Trello."]
