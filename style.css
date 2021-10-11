@@ -249,7 +249,6 @@ section .heading {
 
 .panel-back {
     transform: rotateY(180deg);
-    /*padding: 15px 10px;*/
 }
 
 .xp-name {
@@ -352,7 +351,7 @@ section .heading {
 }
 
 .arrow-skills:hover, .arrow-skills:focus {
-   color: #a01a58;
+    color: #a01a58;
 }
 
 .arrow-skills-medium-screen {
