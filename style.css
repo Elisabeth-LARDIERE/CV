@@ -256,8 +256,8 @@ section .heading {
 }
 
 .icon-flip-box {
-    padding: 0;
-    width: 90%;
+    padding-right: 10px;
+    width: 80%;
     text-align: end;
     position: fixed;
     backface-visibility: hidden;
@@ -497,6 +497,7 @@ footer h5 {
 
 /******************** MEDIA QUERIES ********************/
 
+
 /*************** Small Devices ***************/
 
 @media screen and (min-width: 480px) {
@@ -523,6 +524,7 @@ footer h5 {
     }
 
     .icon-flip-box {
+        padding-right: 5px;
         bottom: 15px;
         width: 95%;
     }
