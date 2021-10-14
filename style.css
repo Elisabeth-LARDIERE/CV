@@ -241,6 +241,7 @@ section .heading {
 
 .panel-front, .panel-back {
     backface-visibility: hidden;
+    transform: rotateX(0deg);
     position: absolute;
     height: 100%;
     width: 100%;
