@@ -235,9 +235,6 @@ section .heading {
     cursor: pointer;
 }
 
-.timeline-panel-beach {
-    height: 320px;
-}
 
 .panel-front, .panel-back {
     backface-visibility: hidden;
